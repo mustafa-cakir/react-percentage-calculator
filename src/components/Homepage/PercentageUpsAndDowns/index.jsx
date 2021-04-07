@@ -1,5 +1,5 @@
 import React, { useRef, useReducer } from 'react';
-import { parseFloatIfNumber, precisionRound } from '../../../core/utils';
+import { getValueOfRef, precisionRound } from '../../../core/utils';
 import Icons from '../../common/Icons';
 
 const PercentageUpsAndDowns = () => {
@@ -12,11 +12,6 @@ const PercentageUpsAndDowns = () => {
     const { result, isCopied, copiedValue, isInput1Filled } = state;
 
     const refInput1 = useRef(null);
-
-    const getValueOfRef = ref => {
-        if (!ref || !ref.current || !ref.current.value) return 0;
-        return parseFloatIfNumber(ref.current.value);
-    };
 
     const inputChangeHandler = () => {
         const number1 = getValueOfRef(refInput1);

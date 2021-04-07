@@ -1,6 +1,6 @@
 import React, { useRef, useReducer } from 'react';
 import Icons from '../../common/Icons';
-import { parseFloatIfNumber, precisionRound } from '../../../core/utils';
+import { getValueOfRef, precisionRound } from '../../../core/utils';
 
 const WhatIsPercentageOf = () => {
     const [state, setState] = useReducer((currentState, newState) => ({ ...currentState, ...newState }), {
@@ -13,11 +13,6 @@ const WhatIsPercentageOf = () => {
 
     const refInput1 = useRef(null);
     const refInput2 = useRef(null);
-
-    const getValueOfRef = ref => {
-        if (!ref || !ref.current || !ref.current.value) return 0;
-        return parseFloatIfNumber(ref.current.value);
-    };
 
     const inputChangeHandler = () => {
         const number1 = getValueOfRef(refInput1);

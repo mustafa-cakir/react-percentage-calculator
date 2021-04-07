@@ -28,8 +28,24 @@ export const inputMaxOrMinOverride = event => {
     if (parseFloat(value) === 0) event.target.value = '';
 };
 
+/**
+ *
+ * @param number {number}
+ * @param precision {number}
+ * @returns {number}
+ */
 export const precisionRound = (number, precision = 4) => {
     const factor = 10 ** precision;
     const n = precision < 0 ? number : 0.01 / factor + number;
     return Math.round(n * factor) / factor;
+};
+
+/**
+ *
+ * @param ref {Object}
+ * @returns {number}
+ */
+export const getValueOfRef = ref => {
+    if (!ref || !ref.current || !ref.current.value) return 0;
+    return parseFloatIfNumber(ref.current.value);
 };
