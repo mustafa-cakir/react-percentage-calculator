@@ -3,7 +3,7 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
-    "start_url": "http://host.flexiblewebdesign.com/easy-percentage-calculator",
+    "start_url": "https://easy-percentage-calculator.firebaseapp.com/",
     "name": "Easy Percentage Calculator",
     "short_name": "Percentage Calculator",
     "description": "Easy Percentage Calculator is very handy while trading on crtypo and/or stock-markets.",
