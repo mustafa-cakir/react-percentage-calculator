@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HomepageContainer from './components/Homepage/HomepageContainer';
+import './assets/styles/bootstrap-grid.scss'; // Import Bootstrap Grid's
+import './assets/styles/global.scss';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <div className="App">
+            <HomepageContainer />
+        </div>
     </React.StrictMode>,
     document.getElementById('root'),
 );
