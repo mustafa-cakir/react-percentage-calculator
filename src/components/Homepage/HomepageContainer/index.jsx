@@ -18,7 +18,7 @@ const HomepageContainer = () => {
                     </h1>
                     <p className="text-gray text-medium">
                         Easy Percentage Calculator is very handy while trading on crtypo and/or stock-markets. It lets
-                        you calculate percentages of a given numbers with ease.
+                        you calculate percentages of given numbers with ease.
                     </p>
                 </div>
             </header>
@@ -46,7 +46,7 @@ const HomepageContainer = () => {
             </main>
             <footer className="py-6">
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col">
                             <div className="text-small text-gray">© 2021 - Developed by Mustafa Cakir</div>
                         </div>

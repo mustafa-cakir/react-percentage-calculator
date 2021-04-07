@@ -26,36 +26,48 @@ const PercentageUpsAndDowns = () => {
             calculateResult = [
                 {
                     id: 1,
+                    percentage: 3,
+                    isUp: true,
+                    value: precisionRound((103 / 100) * number1, 4),
+                },
+                {
+                    id: 2,
                     percentage: 5,
                     isUp: true,
                     value: precisionRound((105 / 100) * number1, 4),
                 },
                 {
-                    id: 2,
+                    id: 3,
                     percentage: 10,
                     isUp: true,
                     value: precisionRound((110 / 100) * number1, 4),
                 },
                 {
-                    id: 3,
+                    id: 4,
                     percentage: 20,
                     isUp: true,
                     value: precisionRound((120 / 100) * number1, 4),
                 },
                 {
-                    id: 4,
+                    id: 5,
+                    percentage: 3,
+                    isUp: false,
+                    value: precisionRound((97 / 100) * number1, 4),
+                },
+                {
+                    id: 6,
                     percentage: 5,
                     isUp: false,
                     value: precisionRound((95 / 100) * number1, 4),
                 },
                 {
-                    id: 5,
+                    id: 7,
                     percentage: 10,
                     isUp: false,
                     value: precisionRound((90 / 100) * number1, 4),
                 },
                 {
-                    id: 6,
+                    id: 8,
                     percentage: 20,
                     isUp: false,
                     value: precisionRound((80 / 100) * number1, 4),
