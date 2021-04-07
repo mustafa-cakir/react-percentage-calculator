@@ -48,9 +48,9 @@ const HomepageContainer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="text-small text-gray">© 2021 Developed by Mustafa Cakir</div>
+                            <div className="text-small text-gray">© 2021 - Developed by Mustafa Cakir</div>
                         </div>
-                        <div className="col text-right">
+                        <div className="col col-auto text-right">
                             <a
                                 rel="noreferrer noopener"
                                 href="https://github.com/mustafa-cakir/react-percentage-calculator"

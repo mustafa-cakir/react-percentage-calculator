@@ -1,8 +1,10 @@
 # React - Easy Percentage Calculator
 
-This is single page app to calculate percentages upon given inputs
+Easy Percentage Calculator is very handy while trading on crtypo and/or stock-markets. It lets you calculate percentages of a given numbers with ease.
 
-Developed using React Js (Create React App)
+Developed By Mustafa Cakir using React Js (kickstarted using CRA)
+
+Live Demo: https://easy-percentage-calculator.firebaseapp.com/
 
 ## Available Scripts
 
@@ -21,4 +23,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
