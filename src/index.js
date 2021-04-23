@@ -4,12 +4,13 @@ import reportWebVitals from './reportWebVitals';
 import HomepageContainer from './components/Homepage/HomepageContainer';
 import './assets/styles/bootstrap-grid.scss'; // Import Bootstrap Grid's
 import './assets/styles/global.scss';
+import { GlobalStateProvider } from './StateContext';
 
 ReactDOM.render(
     <React.StrictMode>
-        <div className="App">
+        <GlobalStateProvider>
             <HomepageContainer />
-        </div>
+        </GlobalStateProvider>
     </React.StrictMode>,
     document.getElementById('root'),
 );

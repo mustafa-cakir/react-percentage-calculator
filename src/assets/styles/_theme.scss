@@ -1,0 +1,73 @@
+$dark-color: #848e9c;
+
+.app {
+	transition: background-color .3s ease;
+	&.is-dark {
+		background: #12171d;
+		color: #fff;
+		.text-gray {
+			color: $dark-color;
+		}
+		.link {
+			color: $dark-color;
+			&:hover {
+				color: #fff;
+				border-bottom-color: #fff;
+			}
+		}
+		.white-box {
+			background-color: #1A1E23;
+			color: $dark-color;
+		}
+		input[type="number"] {
+			border-color: transparent;
+			background-color: rgba(43, 47, 54, 0.9);
+			color: $dark-color;
+			&:hover {
+				border-color: rgba($dark-color, 0.5);
+			}
+			&:focus {
+				box-shadow: 0 0 0 3px rgba($dark-color, 0.1);
+				border-color: rgba($dark-color, 0.5);
+			}
+			&::placeholder {
+				color: rgba($dark-color, 0.3);
+			}
+		}
+		.homepage {
+			.btn-clear-input {
+				background: transparent;
+				color: $dark-color;
+				&:hover {
+					background-color: rgba($dark-color, .1);
+				}
+			}
+		}
+		hr {
+			border-bottom-color: rgba($dark-color, .2);
+		}
+		.result-box {
+			background-color: rgba($dark-color, .1);
+		}
+		.btn {
+			border-color: rgba($dark-color, .6);
+			color: rgba($dark-color, .6);
+			&:hover {
+				box-shadow: 0 0 0 3px rgba($dark-color, .1);
+			}
+			&:active {
+				background-color: rgba($dark-color, .6);
+			}
+			&:disabled {
+				border-color: rgba($dark-color, .1);
+				color: rgba($dark-color, .1);
+				&:hover,
+				&:active {
+					box-shadow: none;
+					border-color: rgba($dark-color, .1);
+					color: rgba($dark-color, .1);
+				}
+			}
+		}
+	}
+}

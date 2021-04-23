@@ -2,6 +2,9 @@
 
 .homepage {
     margin: 15px 0;
+    h1 {
+        font-size: 24px;
+    }
     .logo {
         height: 80px;
         width: 80px;
@@ -12,6 +15,7 @@
         }
     }
     .white-box {
+        transition: background-color 0.3s ease;
         background-color: #ffffff;
         border-radius: 10px;
         padding: 15px;
@@ -26,6 +30,7 @@
 
     .btn {
         &-clear-input {
+            transition: background-color 0.3s ease, color 0.3s ease;
             position: absolute;
             right: 1px;
             top: 1px;
@@ -33,6 +38,9 @@
             width: 32px;
             background-color: #ddd;
             border-radius: 0 4px 4px 0;
+            &:hover {
+                background-color: #ccc;
+            }
         }
     }
 }

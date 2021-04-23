@@ -58,14 +58,11 @@
 }
 
 .link {
+	color: #000;
 	border-bottom: 1px solid transparent;
 	transition: color .2s linear, border-bottom-color .2s linear;
 	&:hover {
 		color: #2e1098;
 		border-bottom-color: #2e1098;
-	}
-	&:active {
-		background-color: #110098;
-		border-bottom-color: #110098;
 	}
 }
