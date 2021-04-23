@@ -3,6 +3,7 @@ import React from 'react';
 const globalReducer = (state, action) => {
     switch (action.type) {
         case 'GLOBAL_CHANGE_THEME':
+            document.body.classList[state.isThemeDark ? 'remove' : 'add']('is-dark');
             return {
                 ...state,
                 isThemeDark: !state.isThemeDark,
@@ -27,12 +28,7 @@ const GlobalStateContext = React.createContext(initialState);
 export const GlobalStateProvider = ({ children }) => {
     const [state, dispatch] = React.useReducer(globalReducer, initialState);
     const value = [state, dispatch];
-    const { isThemeDark } = state;
-    return (
-        <GlobalStateContext.Provider value={value}>
-            <div className={`app ${isThemeDark ? 'is-dark' : 'is-light'}`}>{children}</div>
-        </GlobalStateContext.Provider>
-    );
+    return <GlobalStateContext.Provider value={value}>{children}</GlobalStateContext.Provider>;
 };
 
 export const useGlobalState = () => {

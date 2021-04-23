@@ -3,8 +3,7 @@ import { useGlobalState } from '../../../StateContext';
 import './Style.scss';
 
 const DayNightSwitcher = () => {
-    const [state, dispatch] = useGlobalState();
-    const { isThemeDark } = state;
+    const [, dispatch] = useGlobalState();
 
     const onChangeHandler = () => {
         dispatch({ type: 'GLOBAL_CHANGE_THEME' });
@@ -12,7 +11,7 @@ const DayNightSwitcher = () => {
 
     return (
         <label className="dayNight">
-            <input type="checkbox" defaultChecked={!isThemeDark} onChange={onChangeHandler} />
+            <input type="checkbox" onChange={onChangeHandler} />
             <div />
         </label>
     );

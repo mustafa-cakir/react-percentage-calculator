@@ -8,9 +8,11 @@ import { GlobalStateProvider } from './StateContext';
 
 ReactDOM.render(
     <React.StrictMode>
-        <GlobalStateProvider>
-            <HomepageContainer />
-        </GlobalStateProvider>
+        <div className="app">
+            <GlobalStateProvider>
+                <HomepageContainer />
+            </GlobalStateProvider>
+        </div>
     </React.StrictMode>,
     document.getElementById('root'),
 );
