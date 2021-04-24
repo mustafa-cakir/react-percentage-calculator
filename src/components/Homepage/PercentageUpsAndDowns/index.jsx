@@ -133,7 +133,7 @@ const PercentageUpsAndDowns = () => {
                 </div>
             </div>
             {result && (
-                <div className="result-box mb-3 d-block">
+                <div className="result-box d-block">
                     {result &&
                         result.map(item => {
                             const { id, percentage, isUp, value } = item;
