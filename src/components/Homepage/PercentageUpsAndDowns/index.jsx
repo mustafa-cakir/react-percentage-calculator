@@ -23,61 +23,73 @@ const PercentageUpsAndDowns = () => {
                     id: 1,
                     percentage: 2,
                     isUp: true,
-                    value: precisionRound((102 / 100) * number1, 4),
+                    value: precisionRound((102 / 100) * number1),
                 },
                 {
                     id: 2,
                     percentage: 3,
                     isUp: true,
-                    value: precisionRound((103 / 100) * number1, 4),
+                    value: precisionRound((103 / 100) * number1),
+                },
+                {
+                    id: 11,
+                    percentage: 4,
+                    isUp: true,
+                    value: precisionRound((104 / 100) * number1),
                 },
                 {
                     id: 3,
                     percentage: 5,
                     isUp: true,
-                    value: precisionRound((105 / 100) * number1, 4),
+                    value: precisionRound((105 / 100) * number1),
                 },
                 {
                     id: 4,
                     percentage: 10,
                     isUp: true,
-                    value: precisionRound((110 / 100) * number1, 4),
+                    value: precisionRound((110 / 100) * number1),
                 },
                 {
                     id: 5,
                     percentage: 20,
                     isUp: true,
-                    value: precisionRound((120 / 100) * number1, 4),
+                    value: precisionRound((120 / 100) * number1),
                 },
                 {
                     id: 6,
                     percentage: 2,
                     isUp: false,
-                    value: precisionRound((98 / 100) * number1, 4),
+                    value: precisionRound((98 / 100) * number1),
                 },
                 {
                     id: 7,
                     percentage: 3,
                     isUp: false,
-                    value: precisionRound((97 / 100) * number1, 4),
+                    value: precisionRound((97 / 100) * number1),
+                },
+                {
+                    id: 12,
+                    percentage: 4,
+                    isUp: false,
+                    value: precisionRound((96 / 100) * number1),
                 },
                 {
                     id: 8,
                     percentage: 5,
                     isUp: false,
-                    value: precisionRound((95 / 100) * number1, 4),
+                    value: precisionRound((95 / 100) * number1),
                 },
                 {
                     id: 9,
                     percentage: 10,
                     isUp: false,
-                    value: precisionRound((90 / 100) * number1, 4),
+                    value: precisionRound((90 / 100) * number1),
                 },
                 {
                     id: 10,
                     percentage: 20,
                     isUp: false,
-                    value: precisionRound((80 / 100) * number1, 4),
+                    value: precisionRound((80 / 100) * number1),
                 },
             ];
         }
@@ -146,7 +158,7 @@ const PercentageUpsAndDowns = () => {
                                             </span>
                                         </div>
                                         <div className="col text-left p-0">
-                                            <span className="text-large">{value.toLocaleString()}</span>
+                                            <span className="text-large">{value}</span>
                                         </div>
                                         <div className="col col-auto">
                                             <button

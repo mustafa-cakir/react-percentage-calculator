@@ -27,6 +27,16 @@ export const inputMaxOrMinOverride = event => {
     if (min && value && parseFloatIfNumber(value) < parseFloatIfNumber(min)) event.target.value = min;
     if (parseFloat(value) === 0) event.target.value = '';
 };
+//
+// /**
+//  *
+//  * @param number
+//  * @returns {number}
+//  */
+// const countDecimals = number => {
+//     if (Math.floor(number) === number) return 0;
+//     return number.toString().split('.')[1].length || 0;
+// };
 
 /**
  *
@@ -34,7 +44,7 @@ export const inputMaxOrMinOverride = event => {
  * @param precision {number}
  * @returns {number}
  */
-export const precisionRound = (number, precision = 4) => {
+export const precisionRound = (number, precision = 10) => {
     const factor = 10 ** precision;
     const n = precision < 0 ? number : 0.01 / factor + number;
     return Math.round(n * factor) / factor;
